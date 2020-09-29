@@ -1,0 +1,42 @@
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+body{
+    background-image: url("back.png");
+    margin: 0px;
+}
+.grid{
+    display: flex;
+   
+    flex-wrap: wrap;
+    justify-content:space-between; 
+    
+    padding:15px;
+    font-size: 20px;
+    color: azure;
+
+}
+.item{
+    background-color: #ffffff;
+    position: relative;  
+    color: teal;
+    
+}
+.item p{
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.item:hover p{
+    opacity:3;
+    color : blue;
+}
+
+.item:hover img{
+    opacity:0.33;
+    background-image: url(back.png);
+}
